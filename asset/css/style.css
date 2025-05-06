@@ -1,0 +1,63 @@
+.content {
+  width: 1085px;
+  max-width: (100%-135px);
+  margin-left: auto;
+  margin-right: auto;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Sen";
+}
+.logo {
+  color: #171100;
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px; /* 141.667% */
+}
+.menu {
+  margin-left: 430px;
+  display: flex;
+  gap: 42px;
+}
+.head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu .items {
+  text-align: left;
+  min-width: 70px;
+  position: relative;
+  color: #5f5b53;
+  font-family: "Fz Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+
+.menu .items::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #171100;
+  transition: width 0.3s ease;
+}
+.menu .items:hover {
+  color: #171100;
+  font-weight: 600;
+}
+.menu .items:hover::after {
+  width: 50%;
+}
