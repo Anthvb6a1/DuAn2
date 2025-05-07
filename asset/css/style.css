@@ -34,11 +34,20 @@ body {
   display: flex;
   gap: 23px;
 }
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #fff; /* cần có để tránh phần dưới lộ ra */
+  z-index: 999; /* đảm bảo hiển thị trên các phần khác */
+  margin-bottom: 75px;
+  transition: background-color 1s ease, box-shadow 0.3s ease; /* Hiệu ứng mượt */
+}
 .head {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .menu .items {
   text-align: center;
   position: relative;
@@ -90,4 +99,157 @@ body {
   .menu {
     margin-left: auto;
   }
+}
+.banner .image > img {
+  margin-bottom: 65px;
+  width: 470px;
+  height: 685px;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: 73% 50%;
+}
+.banner .image {
+  position: relative;
+}
+.banner .image .sub-img {
+  position: absolute;
+  top: 395px;
+  right: -95px;
+  width: 270px;
+  height: 244px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.sub-img {
+  gap: 14px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.sub-img .sub-content {
+  display: flex;
+  flex-direction: row;
+}
+.sub-img .sub-text {
+  margin-left: 28px;
+  display: flex;
+  flex-direction: column;
+}
+.sub-text strong {
+  color: #171100;
+  font-family: "Fz Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 166.667% */
+}
+.sub-text p {
+  color: #5f5b53;
+  font-family: "Fz Poppins";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 185.714% */
+}
+.sub-img .sub-content img {
+  margin-left: 38px;
+  height: 24px;
+  width: 24px;
+}
+.banner {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+}
+.text-banner {
+  flex-direction: column;
+  display: flex;
+}
+.text-banner h1 {
+  margin-top: 64px;
+  display: inline-block;
+  width: 470px;
+  color: #171100;
+  font-size: 5.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 6.3rem; /* 117.241% */
+  letter-spacing: -1.16px;
+}
+.text-banner .p1 {
+  margin-top: 22px;
+  display: inline-block;
+  width: 470px;
+  color: #5f5b53;
+  font-family: "Fz Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+.text-banner .p2 {
+  margin-top: 48px;
+  display: inline-block;
+  width: 470px;
+  color: #5f5b53;
+  font-family: "Fz Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+}
+.banner .banner-button {
+  display: flex;
+  align-items: center;
+}
+.btn.banner-btn {
+  flex-shrink: 0;
+  border-radius: 32px;
+  background: #ffb900;
+}
+.banner-btn a {
+  display: inline-block;
+  padding: 17px 33px;
+  color: #fff;
+  text-align: center;
+  font-family: "Fz Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 166.667% */
+}
+
+.banner-button .text {
+  color: #171100;
+  font-family: "Fz Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 166.667% */
+}
+.banner-button .icon {
+  margin-left: 26px;
+}
+.banner-button {
+  margin-top: 38px;
+}
+.text-banner .info .stu {
+  margin-right: 28px;
+  color: #171100;
+  font-family: "Sen";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px; /* 122.727% */
+}
+.stu span {
+  color: #5f5b53;
+  font-family: "Fz Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
 }
